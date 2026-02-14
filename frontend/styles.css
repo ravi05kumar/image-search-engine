@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f7f9fc;
+    color: #1a1a1a;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.brand {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.brand h1 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.brand p {
+    color: #6b7280;
+    margin-top: 8px;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 30px rgba(0,0,0,0.06);
+    max-width: 420px;
+    margin: auto;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #6366f1;
+}
+
+.primary-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #6366f1;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.primary-btn:hover {
+    background: #4f46e5;
+}
+
+.switch {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.switch span {
+    color: #6366f1;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.status {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ef4444;
+}
+
+/* SEARCH SECTION */
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.search-bar input {
+    flex: 7;
+}
+
+.search-bar button {
+    flex: 3;
+    border: none;
+    background: #111827;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.logout-btn {
+    margin-bottom: 20px;
+    padding: 8px 16px;
+    border: none;
+    background: #ef4444;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.result-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.result-card:hover {
+    transform: translateY(-4px);
+}
+
+.result-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.result-card p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.result-card small {
+    color: #6b7280;
+    font-size: 12px;
+}
+
+.hidden {
+    display: none;
+}
+

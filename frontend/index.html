@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VisionSearch AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="brand">
+        <h1>VisionSearch AI</h1>
+        <p>Search the web with intelligent AI</p>
+    </div>
+
+    <!-- ================= AUTH SECTION ================= -->
+    <div id="authSection" class="card">
+
+        <!-- LOGIN -->
+        <div id="loginSection">
+            <h2>Welcome Back</h2>
+
+            <input id="loginUsername" placeholder="Username">
+            <input id="loginPassword" type="password" placeholder="Password">
+
+            <button onclick="login()" class="primary-btn">Login</button>
+
+            <p class="switch">
+                Don't have an account?
+                <span onclick="showRegister()">Register</span>
+            </p>
+        </div>
+
+        <!-- REGISTER -->
+        <div id="registerSection" style="display:none;">
+            <h2>Create Account</h2>
+
+            <input id="regUsername" placeholder="Username">
+            <input id="regEmail" placeholder="Email">
+            <input id="regPassword" type="password" placeholder="Password">
+
+            <button onclick="register()" class="primary-btn">Register</button>
+
+            <p class="switch">
+                Already have an account?
+                <span onclick="showLogin()">Login</span>
+            </p>
+        </div>
+
+        <p id="status" class="status"></p>
+
+    </div>
+
+    <!-- ================= SEARCH SECTION ================= -->
+    <div id="searchSection" class="hidden">
+
+        <div class="search-bar">
+            <input id="searchInput" placeholder="Search images...">
+            <button onclick="searchImages()">Search</button>
+        </div>
+
+        <button onclick="logout()" class="logout-btn">Logout</button>
+
+        <div id="results" class="results-grid"></div>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
