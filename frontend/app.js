@@ -198,9 +198,9 @@ function updateStatus(message, isError = false) {
     status.innerText = message;
 
     if (isError) {
-        status.style.color = "#ff4d4d";
+        status.style.color = "#ff4d4d";   // red
     } else {
-        status.style.color = "#00ffcc";
+        status.style.color = "#16a34a";   // dark green (VISIBLE)
     }
 }
 
